@@ -1,0 +1,30 @@
+pip install tensorflow
+
+import tensorflow as tf
+
+print(tf.__version__)
+
+print(tf.reduce_sum(tf.random.normal([1000,1000])))
+
+pip install keras
+
+from tensorflow import keras
+
+from keras import datasets
+
+(train_images,train_labels),(test_images,test_labels)=datasets.mnist.load_data()
+
+train_images.shape,test_images.shape
+
+pip install Theano
+
+import theano
+print("Theano version:", theano.__version__)
+
+pip install torch
+
+import torch
+
+import torch.nn as nn
+
+print(torch.__version__)
